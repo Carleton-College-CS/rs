@@ -72,7 +72,7 @@ export default class LiveCode extends ActiveCode {
 
         // cpp unit test include may be in suffix or hidden prefix code
         if (this.language === "cpp")
-            return combinedSuffix.indexOf("doctest.h") > -1 || this.prefix.indexOf("doctest.h") > -1;
+            return combinedSuffix.indexOf("doctest.h") > -1 || (this.prefix && this.prefix.indexOf("doctest.h") > -1);
 
         return false;
     }
