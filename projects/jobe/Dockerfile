@@ -45,6 +45,7 @@ RUN ln -snf /usr/share/zoneinfo/"$TZ" /etc/localtime && \
     acl \
     apache2 \
     build-essential \
+    curl \
     fp-compiler \
     g++-14 \
     gcc-14 \
@@ -64,7 +65,8 @@ RUN ln -snf /usr/share/zoneinfo/"$TZ" /etc/localtime && \
     tzdata \
     unzip \
     vim \
-    wget
+    wget \
+    zip
 
 RUN python3 -m pip install --break-system-packages pylint beautifulsoup4 pandas requests altair && \
     pylint --reports=no --score=n --generate-rcfile > /etc/pylintrc && \
