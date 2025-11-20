@@ -45,7 +45,6 @@ RUN ln -snf /usr/share/zoneinfo/"$TZ" /etc/localtime && \
     acl \
     apache2 \
     build-essential \
-    curl \
     fp-compiler \
     g++-14 \
     gcc-14 \
