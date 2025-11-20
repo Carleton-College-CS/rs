@@ -81,7 +81,6 @@ RUN python3 -m pip install --break-system-packages pylint beautifulsoup4 pandas 
     chmod 777 /var/crash && \
     echo '<!DOCTYPE html><html lang="en"><title>Jobe</title><h1>Jobe</h1></html>' > /var/www/html/index.html && \
     git clone https://github.com/RunestoneInteractive/jobe.git /var/www/html/jobe && \
-#    git clone https://github.com/Carleton-College-CS/jobe.git /var/www/html/jobe && \
     apache2ctl start && \
     cd /var/www/html/jobe && \
     /usr/bin/python3 /var/www/html/jobe/install && \
